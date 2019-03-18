@@ -1,0 +1,50 @@
+<html>
+
+<head>
+<title> jQuery Course</title>
+<!-- "For accessing JQuery using online API"
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+-->
+<style type = "text/css">
+.square {
+width: 150px;
+height : 150px;
+margin : 10px;
+background-color : blue;
+}
+
+#circle {
+width: 150px;
+height : 150px;
+border-radius:50%;
+background-color: red;
+margin : 10px;
+}
+
+</style>
+
+<!--"For accessing JQuery using offline package-->
+<script type = "text/javascript" src = "jquery-3.3.1.min.js"></script>
+
+
+	<body>
+<div id = "circle"></div>
+	<div class = "square"></div>
+	<div class = "square"></div>
+	<script type="text/javascript">
+/* These are to select objects using classes and id
+$("#circle").click(function (){
+alert("Circle clicked!")
+
+});
+$(".square").click(function(){
+alert ("Box has been clicked!")});
+*/
+$("div").click(function()
+{
+alert("A Div was clicked!")});
+	</script>
+	
+	
+	</body>
+</html>
