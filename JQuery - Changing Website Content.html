@@ -1,0 +1,51 @@
+<html>
+
+<head>
+<title> jQuery Course</title>
+<!-- "For accessing JQuery using online API"
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+-->
+<style type = "text/css">
+
+
+#circle {
+width: 150px;
+height : 150px;
+border-radius:50%;
+background-color: red;
+margin : 10px;
+}
+
+</style>
+
+<!--"For accessing JQuery using offline package-->
+<script type = "text/javascript" src = "jquery-3.3.1.min.js"></script>
+
+
+	<body>
+<div id = "circle"></div>
+	<p> This is some text</p>
+	<iframe src ="https://www.ecowebhosting.co.uk"  id ="newsframe"></iframe>
+	<script type="text/javascript">
+/* These are to select objects using classes and id
+$("#circle").click(function (){
+alert("Circle clicked!")
+
+});
+$(".square").click(function(){
+alert ("Box has been clicked!")});
+*/
+
+
+//On Hover, we are changing the website in the iframe
+$("#circle").hover(function()
+{
+//$("p").html("This text has been modified due to a click on the red circle.")});
+	//alert($("p").html())});
+	
+	$("iframe").attr("src", "https://www.codestars.com/")});
+	</script>
+	
+	
+	</body>
+</html>
