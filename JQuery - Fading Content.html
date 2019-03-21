@@ -1,0 +1,66 @@
+<html>
+
+<head>
+<title> jQuery Course</title>
+<!-- "For accessing JQuery using online API"
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+-->
+<style type = "text/css">
+
+
+#circle {
+width: 150px;
+height : 150px;
+border-radius:50%;
+background-color: red;
+margin : 10px;
+}
+
+
+.square {
+width: 150px;
+height : 150px;
+background-color: red;
+margin : 10px;
+}
+
+</style>
+
+<!--"For accessing JQuery using offline package-->
+<script type = "text/javascript" src = "jquery-3.3.1.min.js"></script>
+
+
+	<body>
+<div id = "circle"></div>
+<div class = "square" id = "square"></div>
+
+<p id = "para" hidden = "true"> This is a text that is going to vanish once i click the button below</p>
+<button id = "btn">VanishingButton</button>
+
+	<script type="text/javascript">
+/*
+$("div").click(function(){
+$(this).fadeOut("slow", function () {
+alert ("Fadeout has finished");
+}); // You can add parameters to the fading animation as well.
+//Callback is used here 
+}
+
+);
+*/
+$("#btn").click (function(){
+if($("#para").css("display") == "none")
+{
+$("#para").fadeIn();
+//alert("Text is hidden!");
+}
+else
+{
+$("p").fadeOut();
+}
+});
+	</script>
+	
+	
+	</body>
+</html>
