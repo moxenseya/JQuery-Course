@@ -1,0 +1,47 @@
+<html>
+
+<head>
+<title> jQuery Course</title>
+<!-- "For accessing JQuery using online API"
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+-->
+<style type = "text/css">
+
+
+#circle {
+width: 150px;
+height : 150px;
+border-radius:50%;
+background-color: red;
+margin : 10px;
+}
+
+</style>
+
+<!--"For accessing JQuery using offline package-->
+<script type = "text/javascript" src = "jquery-3.3.1.min.js"></script>
+
+
+	<body>
+<div id = "circle"></div>
+
+	<script type="text/javascript">
+
+$("div").click(function() {
+//array declaration in js is in {} 
+$(this).animate({
+ width:"400px",
+ height : "400px",
+ marginLeft: "100px",
+ marginTop: "100px"
+ }, 2000, function(){
+ $(this).css("background-color","blue");
+ }); //function callback used here at the end.
+}
+);
+
+	</script>
+	
+	
+	</body>
+</html>
