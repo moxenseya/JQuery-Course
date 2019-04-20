@@ -1,0 +1,49 @@
+<html>
+
+<head>
+<title> jQuery Course</title>
+<!-- "For accessing JQuery using online API"
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+-->
+<style type = "text/css">
+  #draggable { width: 150px; height: 150px; padding: 0.5em; }
+  #resizable { width: 150px; height: 150px; padding: 0.5em; }
+  #resizable h3 { text-align: center; margin: 0; }
+  #alsoResizeElement {width: 150px; height: 150px; padding: 0.5em; }
+</style>
+
+<link href="jquery-ui/jquery-ui.css" rel="stylesheet">
+
+<!--"For accessing JQuery using offline package-->
+<script type = "text/javascript" src = "jquery-3.3.1.min.js"></script>
+<script src="jquery-ui/jquery-ui.js"></script>
+</head>
+
+
+	<body>
+<div id="draggable" class="ui-widget-content">
+  <p>Drag me around</p>
+</div>
+
+<div id="resizable" class="ui-widget-content">
+  <h3 class="ui-widget-header">Resizable</h3>
+</div>
+<div id="alsoResizeElement">  <h3 class="ui-widget-header">Resizable</h3>
+</div>
+
+	<script type="text/javascript">
+ $( function() {
+    //$( "#draggable" ).draggable({ axis: "y" });
+	//$("p").html("Can only drag this box vertically!");
+	$( "#resizable" ).resizable({ grid: 50, alsoResize: "#alsoResizeElement", resize: function(event, ui){
+if($("#resizable").width() > 300){
+alert("Big Enough!");
+}
+	}});
+	$("#alsoResizeElement").resizable();
+  } );
+	</script>
+	
+	
+	</body>
+</html>
